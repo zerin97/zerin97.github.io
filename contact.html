@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Link to the CSS reset file: normalize.css
+		Normalize.css used from an online source: normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css, Date accessed: 02 March 2022
+	-->
+   <link rel="styesheet" href="css/normalize.css">
+   <!-- Link to the main stylesheet for this web page -->
+     <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="pg-banner">
+		<h1>Mos Eisley Cantina</h1>
+		<nav id="primary-nav">
+			<a href="../www_root/index.html">Home</a>
+			<a href="../www_root/menu.html">Menu</a>
+            <a href="../www_root/mos-eisley.html">About</a>
+			<a href="../www_root/contact.html">Contact Us</a>
+		</nav>
+	</header>
+    <main id="pg-main-content">
+            <!--URL: https://www.forbes.com/sites/forbescommunicationscouncil/2019/05/10/the-chef-collaborator-lessons-from-cooking-school-on-the-power-of-teamwork/?sh=144252b7ec75, 
+                the image that has been used in the contact us section of the contact page, year published: 2016, 
+                Date accessed:  07 03 2022
+            -->
+            <img id="chef-img" src="img/chef.jpg" alt="a picture of the chefs">
+         <section id="info">
+              <h2>Contact Us</h2>
+              <h3>Phone</h3>
+              <p>(902) 447-8760</p>
+              <h3>Hours</h3>
+              <p>11:30am-10:00pm, Monday - Wednesday</p>
+              <p>11:30am-11:00pm, Thursday - Friday</p>  
+              <h3>Location</h3>
+             <!--using the link of the location from google maps-->
+              <p> <a href="https://www.google.com/search?q=6230+spring+garden+road&rlz=1C1CHBF_enCA910US910&oq=6230+spring+garden+road&aqs=chrome..69i57j33i160.4986j0j7&sourceid=chrome&ie=UTF-8#">6230 Spring Garden Road</a></p>
+              <p>Halifax, Nova Scotia.</p>
+              <p>B3H 4J4</p>
+         </section>
+        <section id="for-msg">
+          <h2>Provide your feedback!</h2>
+          <!--creating form for users to fill in their details in order to send a message to the restaurant-->
+          <form action="text" method="post" id="msg-form">
+             <div class="form-group">
+                 <label for="name-input">Name:</label>
+                 <input type="text" id="name-input" name="i-name" placeholder="Fariha Zerin" required>
+             </div>
+             <div class="form-group">
+                 <label for="email-input">Email Address:</label>
+                 <input type="text" id="email-input" name="i-email" placeholder="fariha@website.com" required>
+             </div>
+             <div class="form-group">
+                 <label for="subject-input">Subject:</label>
+                 <input type="text" id="subject-input" name="i-text" required>
+             </div>
+             <div class="form-group">
+                 <label for="message-input">Message:</label>
+                 <input type="text" id="message-input" name="i-text" required>
+             </div>
+             <input type="button" value="submit" onclick="Submit('submit')">
+          </form>
+     </section>
+     <section id="for-hiring">
+         <h2>Want to join our team? Apply here!</h2>
+         <!--creating form for users to fill in their details in order to apply for a job at the restaurant-->
+         <form action="text" method="post" id="apply-form">
+             <div class="form-group">
+                 <label for="name-in">Name:</label>
+                 <input type="text" id="name-in" name="i-name" placeholder="Fariha Zerin" required>
+             </div>
+             <div class="form-group">
+                 <label for="email-in">Email Address:</label>
+                 <input type="email" id="email-in" name="i-email" placeholder="fariha@website.com" required>
+             </div>
+             <div class="form-group">
+                 <label for="days-input">Available days:</label>
+                 <input type="text" id="days-input" name="i-availibility" required>
+             </div>
+             <div class="form-group">
+                 <label for="type-input">Desired Job Type:</label>
+                 <input type="text" id="type-input" name="i-job" required>
+             </div>
+             <input type="button" value="Apply" onclick="Apply('apply')">
+          </form>
+     </section>
+    </main>
+    <footer id="pg-footer">
+		<p>&copy; 2022 Mos Eisley Cantina Wbsite by Fariha Zerin Rabita.</p>
+	</footer>
+</body>
+</html>
